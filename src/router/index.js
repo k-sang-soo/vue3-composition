@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/index.vue';
-import About from '@/views/about/index.vue';
+import Home from '@/views/index.vue'
+import About from '@/views/about/index.vue'
+import Notice from '@/views/notice/index.vue'
+import NoticeDetail from '@/views/notice/detail/index.vue'
 
 /***
  *
@@ -22,6 +24,16 @@ export const Routes = [
     meta: {
       layout: 'AnotherLayout'
     }
+  },
+  {
+    path: '/notice',
+    name: 'notice',
+    component: Notice
+  },
+  {
+    path: '/notice/:id',
+    name: 'NoticeDetail',
+    component: NoticeDetail
   }
 ]
 
@@ -29,13 +41,12 @@ const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: Routes,
   scrollBehavior(to, from, savedPosition) {
-    if(savedPosition) {
+    if (savedPosition) {
       return savedPosition
     } else {
-      return { top: 0}
+      return { top: 0 }
     }
   }
-
 })
 
 export default router

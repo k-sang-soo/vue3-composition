@@ -4,6 +4,7 @@
     <nav class="nav">
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/about">About</RouterLink>
+      <RouterLink to="/notice">Notice</RouterLink>
     </nav>
   </header>
 </template>
