@@ -1,4 +1,4 @@
-# vue3-sample
+# vue3-composition
 
 Vue3 Composition API Sample File
 
@@ -35,7 +35,39 @@ src/
 - App.vue: 어플리케이션의 최상위 컴포넌트. 모든 컴포넌트와 레이아웃은 이 이 컴포넌트 안에 렌더링 됨.
 - main.js: Vue 인스턴스를 생성, 전역으로 처리해야 될 부분은 이곳에서 처리.
 
-Prettier, ESLint 는 협의 후 세팅(현재는 기본 세팅 값)
+## 스택
+- Node/NPM: 18.13.0/8.19.3
+- Vue 3
+  - Composition API using Vue3 + script setup
+  - import alias: '@'
+  - Vue Router
+  - Pinia
+  - Code formatting
+    - eslint + custom rules
+    - prettier
+    - stylelint
+  - husky(+ commit lint)
+- Bundler
+  -  Vite
+
+## Conventional Commits 규칙
+
+### 기본 구조
+```javascript
+<type>(<scope>): <subject>
+```
+
+- type (필수): 커밋의 유형을 설명합니다.
+  - feat: 새로운 기능 추가 
+  - fix: 버그 수정 
+  - docs: 문서 변경 
+  - style: 코드 스타일 변경 (코드 수정 없음)
+  - refactor: 코드 리팩토링 
+  - perf: 성능 개선 
+  - test: 테스트 추가 또는 수정 (버그나 기능 추가 없음)
+  - chore: 빌드 프로세스 또는 보조 도구 및 라이브러리 변경 (버그나 기능 추가 없음)
+- scope (선택): 커밋의 영향 범위를 나타냅니다. 예를 들어, 특정 컴포넌트 또는 파일명 등이 될 수 있습니다.
+- subject (필수): 커밋의 간략한 설명입니다.
 
 ## Project Setup_
 
@@ -60,5 +92,3 @@ npm run build
 ```sh
 npm run lint
 ```
-# vue3-composition
-# vue3-composition
