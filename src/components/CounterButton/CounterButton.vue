@@ -13,15 +13,15 @@
 </template>
 
 <script setup>
-import { useCounterStore } from '@/stores/modules/counter'
+import useCounterStore from '@/stores/modules/counter';
 
-const counterStore = useCounterStore()
-const { increment, reduction, reset } = counterStore
+const counterStore = useCounterStore();
+const { increment, reduction, reset } = counterStore;
 </script>
 
 <style scoped>
 .buttonGroup {
   display: flex;
-  gap: 0 12px;
+  gap: 0 1.2rem;
 }
 </style>

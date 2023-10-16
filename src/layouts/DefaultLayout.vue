@@ -2,26 +2,21 @@
   <div>
     <Header />
     <h1 class="title">Default Layout</h1>
-    <div class="container">
+    <main class="container">
       <slot></slot>
-    </div>
+    </main>
     <Footer />
   </div>
 </template>
 
 <script setup>
-import Header from '@/components/base/Header.vue'
-import Footer from '@/components/base/Footer.vue'
+import Footer from '@/components/base/Footer/Footer.vue';
+import Header from '@/components/base/Header/Header.vue';
 </script>
 
 <style scoped>
-.container {
-  max-width: 1512px;
-  margin: 0 auto;
-  padding: 24px;
-}
-
 .title {
+  font-size: 2.6rem;
   text-align: center;
 }
 </style>

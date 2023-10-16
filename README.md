@@ -9,6 +9,7 @@ src/
 |-- assets/                # 이미지, 전역 스타일 등의 정적 리소스
 |-- components/            # 범용 컴포넌트
 |-- composable/            # 재사용 가능한 Composition 함수
+|-- containers/            # 해당 view 페이지에서만 사용하는 컴포넌트
 |-- layouts/               # 범용 레이아웃 컴포넌트
 |-- plugins                # 플러그인 생성 또는 연결   
 |-- router/                # Vue Router 라우팅 관련 설정
@@ -24,6 +25,7 @@ src/
 - assets: 이미지, 전역 스타일, 폰트 및 기타 정적 파일을 포함한 정적 리소스.
 - components: 범용적으로 사용되는 Vue 컴포넌트. ex) button, input, card
 - composable: Vue 3의 Composition API를 활용한 재사용 가능한 함수.
+- containers: 해당하는 view 페이지에서만 사용하는 컴포넌트(추후에 공통으로 사용하게 될 때는 components 폴더로 이동) 
 - layouts: 전체 어플리케이션 또는 특정 부분의 레이아웃을 정의하는 컴포넌트. ex) header, sidebar, footer
 - plugins: 전역에 추가할 플러그인 기능들을 모아놓은 폴더.
 - router: Vue Router를 사용하여 어플리케이션의 페이지 라우팅을 정의.

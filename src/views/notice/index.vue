@@ -1,7 +1,12 @@
 <template>
-  <div>notice!</div>
+  <div>
+    <h2>notice!</h2>
+    <List />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import List from '@/containers/notice/List/List.vue';
+</script>
 
 <style scoped></style>

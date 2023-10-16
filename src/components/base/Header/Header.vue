@@ -10,25 +10,25 @@
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router'
+import { RouterLink } from 'vue-router';
 </script>
 
 <style scoped>
 .header {
-  padding: 20px;
+  padding: 2rem;
   border-bottom: 1px solid #333;
 }
 
 .title {
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: 500;
   text-align: center;
 }
 
 .nav {
   display: flex;
-  gap: 0 14px;
-  font-size: 20px;
+  gap: 0 1.4rem;
+  font-size: 2rem;
   justify-content: center;
 }
 </style>

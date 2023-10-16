@@ -6,11 +6,12 @@
 </template>
 
 <script setup>
-import { useCounterStore } from '@/stores/modules/counter'
-import { storeToRefs } from 'pinia'
+import { storeToRefs } from 'pinia';
 
-const counterStore = useCounterStore()
-const { count } = storeToRefs(counterStore)
+import useCounterStore from '@/stores/modules/counter';
+
+const counterStore = useCounterStore();
+const { count } = storeToRefs(counterStore);
 </script>
 
 <style scoped></style>
