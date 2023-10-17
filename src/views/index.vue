@@ -18,6 +18,7 @@
     <section class="section">
       <h3>defineEmits 사용 예시</h3>
       <HomeButton @clicked="handleClickHomeBtn" />
+      테스트
     </section>
   </div>
 </template>
