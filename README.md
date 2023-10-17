@@ -92,3 +92,6 @@ npm run build
 ```sh
 npm run lint
 ```
+
+## 라이센스
+- MIT License
