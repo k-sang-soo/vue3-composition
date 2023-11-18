@@ -43,7 +43,7 @@ src/
   - Vue Router
   - Pinia
   - Code formatting
-    - eslint + custom rules
+    - eslint + airbnb + custom rules
     - prettier
     - stylelint
   - husky(+ commit lint)
