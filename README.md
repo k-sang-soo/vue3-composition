@@ -61,7 +61,7 @@ src/
 |-- plugins                # 플러그인 생성 또는 연결   
 |-- router/                # Vue Router 라우팅 관련 설정
 |-- store/                 # Pinia 상태 관리 디렉터리
-|-- untils/                # 유틸리티 함수    
+|-- utils/                # 유틸리티 함수    
 |-- views/                 # 라우트별 레이아웃 컴포넌트              
 |-- App.vue                # 메인 앱 컴포넌트
 |-- main.js                # 앱의 엔트리 포인트
