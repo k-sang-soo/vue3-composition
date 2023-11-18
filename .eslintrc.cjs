@@ -27,7 +27,6 @@ module.exports = {
     "import/newline-after-import": "error",
     "import/no-duplicates": "error",
     "unused-imports/no-unused-imports": "error",
-    "vue/multi-word-component-names": "off",
     "import/no-unresolved": "error",
     "no-console": "off",
   },
