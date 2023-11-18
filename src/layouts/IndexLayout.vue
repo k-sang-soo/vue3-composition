@@ -20,5 +20,3 @@ const layoutComponent = computed(() => {
   return AnotherLayout;
 });
 </script>
-
-<style scoped></style>

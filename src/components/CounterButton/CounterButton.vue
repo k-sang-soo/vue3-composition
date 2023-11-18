@@ -1,5 +1,5 @@
 <template>
-  <div class="buttonGroup">
+  <div class="button-group">
     <div>
       <button type="button" @click="increment">증가</button>
     </div>
@@ -20,7 +20,7 @@ const { increment, reduction, reset } = counterStore;
 </script>
 
 <style scoped>
-.buttonGroup {
+.button-group {
   display: flex;
   gap: 0 1.2rem;
 }

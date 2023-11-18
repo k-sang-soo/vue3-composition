@@ -1,17 +1,17 @@
 <template>
   <div>
-    <Header />
+    <UIHeader />
     <h1 class="title">Another Layout</h1>
     <main class="container">
       <slot></slot>
     </main>
-    <Footer />
+    <UIFooter />
   </div>
 </template>
 
 <script setup>
-import Footer from '@/components/base/Footer/Footer.vue';
-import Header from '@/components/base/Header/Header.vue';
+import UIFooter from '@/components/base/UIFooter/UIFooter.vue';
+import UIHeader from '@/components/base/UIHeader/UIHeader.vue';
 </script>
 
 <style scoped>

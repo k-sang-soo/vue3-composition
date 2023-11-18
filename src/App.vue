@@ -1,11 +1,11 @@
 <script setup>
 import { RouterView } from 'vue-router';
 
-import Layout from '@/layouts/Layout.vue';
+import IndexLayout from '@/layouts/IndexLayout.vue';
 </script>
 
 <template>
-  <Layout>
+  <IndexLayout>
     <router-view />
-  </Layout>
+  </IndexLayout>
 </template>

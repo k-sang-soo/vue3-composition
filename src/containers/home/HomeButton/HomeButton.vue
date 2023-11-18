@@ -8,5 +8,3 @@ const emitClickEvent = () => {
   emit('clicked', '버튼 클릭!');
 };
 </script>
-
-<style scoped></style>

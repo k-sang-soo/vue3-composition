@@ -71,7 +71,7 @@ src/
 
 - assets: 이미지, 전역 스타일, 폰트 및 기타 정적 파일을 포함한 정적 리소스.
 - components: 범용적으로 사용되는 Vue 컴포넌트. ex) button, input, card
-- composable: Vue 3의 Composition API를 활용한 재사용 가능한 함수.
+- composable: Vue 3의 Composition API를 사용하여, 컴포넌트의 반복적이거나 공통적인 로직(데이터(**Stateful**), 메서드 등)을 재사용 가능한 함수로 분리한 것
 - containers: 해당하는 view 페이지에서만 사용하는 컴포넌트(추후에 공통으로 사용하게 될 때는 components 폴더로 이동) 
 - layouts: 전체 어플리케이션 또는 특정 부분의 레이아웃을 정의하는 컴포넌트. ex) header, sidebar, footer
 - plugins: 전역에 추가할 플러그인 기능들을 모아놓은 폴더.
@@ -98,9 +98,9 @@ src/
   -  Vite 4
 
 ## Code Rule
-- 라우팅 페이지 디렉터리 네이밍은 **케밥 케이스(kebab-case)** 로 한다.
-- 컴포넌트 디렉터리 네이밍은 **파스칼 케이스(PascalCase)** 로 한다.
-- 그 외에 디렉터리 네이밍은 **스네이크식 케이스(snake_case)** 로 한다.
+- 라우팅 페이지 디렉토리 네이밍은 **케밥 케이스(kebab-case)** 로 한다.
+- 컴포넌트 디렉토리 네이밍은 **파스칼 케이스(PascalCase)** 로 한다.
+- 그 외에 디렉토리 네이밍은 **스네이크식 케이스(snake_case)** 로 한다.
 - css 네이밍은 **BEM** 규칙을 사용한다.
   - [BEM 설명 1](https://tech.elysia.land/%EB%84%A4%EC%9D%B4%EB%B0%8D-%EC%BB%A8%EB%B2%A4%EC%85%98-bem-b291ba7bff01)
   - [BEM 설명 2](https://getbem.com/)

@@ -13,5 +13,3 @@ import useCounterStore from '@/stores/modules/counter';
 const counterStore = useCounterStore();
 const { count } = storeToRefs(counterStore);
 </script>
-
-<style scoped></style>

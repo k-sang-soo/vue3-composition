@@ -2,7 +2,7 @@
 <template>
   <ul class="list">
     <template v-for="data in dummyData" :key="data.id">
-      <Item v-bind="data" />
+      <NoticeItem v-bind="data" />
     </template>
   </ul>
 </template>
@@ -10,7 +10,7 @@
 <script setup>
 import { ref } from 'vue';
 
-import Item from '@/containers/notice/Item/Item.vue';
+import NoticeItem from '@/containers/notice/NoticeItem/NoticeItem.vue';
 
 const dummyData = ref([
   {
