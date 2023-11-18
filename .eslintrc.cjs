@@ -30,6 +30,14 @@ module.exports = {
     "import/no-unresolved": "error",
     "no-console": "off",
   },
+  overrides: [
+    {
+      files: ['./src/views/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 'off',
+      }
+    }
+  ],
   settings: {
     ...createAliasSetting({
       "@": `${path.resolve(__dirname, "./src")}`
