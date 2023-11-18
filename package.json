@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite --port 3002",
+    "dev": "vite --host 0.0.0.0",
+    "dev:stage": "vite --host 0.0.0.0 --mode stage",
     "build": "vite build",
+    "build:stage": "vite build --mode stage",
     "preview": "vite preview",
+    "preview:stage": "vite preview --mode stage",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "lint:css": "stylelint '**/*.{vue,css}' --fix --ignore-path .gitignore",
     "format": "prettier --write src/",

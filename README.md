@@ -30,7 +30,7 @@
 - Bundler
   -  Vite
 - Other set
-  - Dev port: 8009
+  - Dev port: 8002
 
 ## 개발 환경
 - Target Device
@@ -137,6 +137,22 @@ src/
 
 ## Project Setup_
 
+### 환경 설정 안내
+
+추후에 프로젝트 시나리오 상 실행 환경을 분기해야될 수도 있어 env 파일을 사용합니다.
+
+#### '.env' 파일 설정
+프로젝트 루트 디렉토리에서 '.env.[mode]' 파일 생성합니다.   
+이 파일에는 현재 [mode]의 포트 번호를 지정합니다.
+
+초기 파일 .env.local, .env.stage 파일 생성 후 아래 필수 값을 입력해야 합니다.
+
+필수 값 :
+```javascript
+VITE_PORT=5555
+```
+---
+
 ```sh
 npm install
 ```
@@ -145,18 +161,37 @@ npm install
 
 ```sh
 npm run dev
+# or
+npm run dev:stage
 ```
 
 ### Compile and Minify for Production
 
 ```sh
 npm run build
+# or
+npm run build:stage
 ```
+
+### Previewing the Build
+
+```sh
+npm run preview
+# or
+npm run preview:stage
+```
+
 
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
 npm run lint
+```
+
+### Lint with [StyleLint](https://stylelint.io/)
+
+```sh
+npm run lint:css
 ```
 
 ## 라이센스
