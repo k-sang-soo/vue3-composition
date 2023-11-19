@@ -28,7 +28,7 @@
 - 추가 Node 플러그인
   - none
 - Bundler
-  -  Vite
+  -  Vite 4
 - Other set
   - Dev port: 8002
 
@@ -77,25 +77,11 @@ src/
 - plugins: 전역에 추가할 플러그인 기능들을 모아놓은 폴더.
 - router: Vue Router를 사용하여 어플리케이션의 페이지 라우팅을 정의.
 - store: Pinia 사용한 전역 상태 관리 로직.
-- utils: 반복되는 작업을 위한 함수나 특정 기능을 수항해는 함수들이 위치.
+- utils: 반복되는 작업을 위한 함수나 특정 기능을 수항해는 함수들
+- 이 위치.
 - views: 각 라우트별로 연결된 메인 컴포넌트나 페이지를 정의.
 - App.vue: 어플리케이션의 최상위 컴포넌트. 모든 컴포넌트와 레이아웃은 이 이 컴포넌트 안에 렌더링 됨.
 - main.js: Vue 인스턴스를 생성, 전역으로 처리해야 될 부분은 이곳에서 처리.
-
-## 스택
-- Node/NPM: 18.13.0/8.19.3
-- Vue 3
-  - Composition API using Vue3 + script setup
-  - import alias: '@'
-  - Vue Router
-  - Pinia
-  - Code formatting
-    - eslint + airbnb + custom rules
-    - prettier
-    - stylelint
-  - husky(+ commit lint)
-- Bundler
-  -  Vite 4
 
 ## Code Rule
 - 라우팅 페이지 디렉토리 네이밍은 **케밥 케이스(kebab-case)** 로 한다.
