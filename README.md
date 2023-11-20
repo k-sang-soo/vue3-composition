@@ -125,18 +125,23 @@ src/
 
 ### 환경 설정 안내
 
-추후에 프로젝트 시나리오 상 실행 환경을 분기해야될 수도 있어 env 파일을 사용합니다.
-
-#### '.env' 파일 설정
+추후에 프로젝트 시나리오 상 실행 환경을 분기해야될 수도 있어 env 파일을 사용합니다.   
 프로젝트 루트 디렉토리에서 '.env.[mode]' 파일 생성합니다.   
 이 파일에는 현재 [mode]의 포트 번호를 지정합니다.
 
-초기 파일 .env.local, .env.stage 파일 생성 후 아래 필수 값을 입력해야 합니다.
-
-필수 값 :
-```javascript
-VITE_PORT=5555
+```sh
+# local
+echo VITE_PORT=8001 > .env.local
+# stage
+echo VITE_PORT=8002 > .env.stage
 ```
+
+### Gitlab-flow 브런치 전략을 위한 stage 브런치 생성
+
+```sh
+git branch stage
+```
+
 ---
 
 ```sh
