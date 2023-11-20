@@ -1,6 +1,6 @@
 {
-  "name": "vue3-sample",
-  "version": "0.0.0",
+  "name": "vue3-composition-api-boilerplate",
+  "version": "1.0.2",
   "private": true,
   "scripts": {
     "dev": "vite --host 0.0.0.0",
